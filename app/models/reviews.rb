@@ -3,5 +3,7 @@ class Reviews < ActiveRecord::Base
     belongs_to :user
 
     def puts_review
-        " #{product.id} #{user.id} :  #{star_rating}, #{comment} "
+
     end
+
+end
