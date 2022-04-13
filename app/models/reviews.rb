@@ -1,4 +1,7 @@
-class User < ActiveRecord::Base
+class Reviews < ActiveRecord::Base
     belongs_to :products
     belongs_to :user
-end
+
+    def puts_review
+        " #{product.id} #{user.id} :  #{star_rating}, #{comment} "
+    end
